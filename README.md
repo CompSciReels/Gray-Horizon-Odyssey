@@ -564,3 +564,693 @@ Ensures score text visibility if score is zero.
 
 GetScore()-
 Returns the current score.
+
+# Script 51 - SelectorSceneController: Manage Background Music in Selector Scene
+This script manages background music when transitioning to the selector scene, ensuring proper music handling and avoiding conflicts.
+
+Private Variables:
+backgroundMusic- Reference to the BackgroundMusic1 script for the current scene. | 
+sampleSceneMusic- Reference to the BackgroundMusic1 script from the sample scene.
+
+Methods:
+Start()-
+Finds the BackgroundMusic1 component for the current scene. | 
+Checks if the BackgroundMusic1 component exists. | 
+Finds and stops the background music from the sample scene using its GameObject. | 
+Unpauses the music for the current selector scene if needed.
+
+# Script 52 - SoundManager: Manage Sound and Mute State
+This script handles sound settings and the mute state for the game. It manages the audio volume, saves the mute state, and updates the UI icon based on the current sound state.
+
+Serialized Fields:
+soundOnIcon- Image component for the sound on icon. | 
+soundOffIcon- Image component for the sound off icon.
+
+Private Variables:
+buttonSound- Reference to the AudioSource used for button sounds. | 
+muted- Boolean indicating if the sound is muted.
+
+Methods:
+Start()-
+Initializes the buttonSound reference. | 
+Checks and sets the initial mute state from PlayerPrefs. | 
+Updates the UI icon based on the current mute state.
+
+OnButtonPress():-
+Toggles the mute state. | 
+Adjusts the volume of buttonSound based on the mute state. | 
+Saves the new mute state to PlayerPrefs. | 
+Updates the UI icon. | 
+
+UpdateButtonIcon()-
+Updates the visibility of the sound on/off icons based on the mute state. | 
+
+Load()-
+Loads the mute state from PlayerPrefs and applies it.
+
+Save()-
+Saves the current mute state to PlayerPrefs.
+
+# Script 53 - SoundManager1: Manage Sound and Mute State with Background Music
+This script manages sound and mute states, including the background music, and updates UI icons to reflect the current sound state.
+
+Serialized Fields:
+soundOnIcon- Image component for the sound on icon. | 
+soundOffIcon- Image component for the sound off icon.
+
+Private Variables:
+muted1- Boolean indicating if the sound is muted. 
+
+Methods:
+Start()-
+Loads the mute state from PlayerPrefs. | 
+Updates the UI icon based on the current mute state. | 
+Finds or creates a BackgroundMusic object and sets its mute state based on muted1. | 
+
+OnButtonPress()-
+Toggles the mute state. | 
+Saves the new mute state to PlayerPrefs. | 
+Updates the UI icon. | 
+Finds the BackgroundMusic object and toggles its mute state based on muted1. | 
+
+UpdateButtonIcon()- Updates the visibility of the sound on/off icons based on the mute state. 
+
+Load()- Loads the mute state from PlayerPrefs and applies it.
+
+Save()- Saves the current mute state to PlayerPrefs and ensures the data is saved immediately.\
+
+# Script 54 - SoundManager3: Manage Sound Icons with Global Variables
+This script manages sound icons based on a global variable GlobalVariables.Checkmark to toggle between sound on and sound off states.
+
+Serialized Fields:
+soundOnIcon- Image component for the sound on icon. | 
+soundOffIcon- Image component for the sound off icon.
+
+Methods:
+Awake()- Placeholder for future initialization code. Currently commented out.
+
+Start()- Placeholder for future initialization code. Currently empty.
+
+Update()- Placeholder for future update logic. Currently empty.
+
+OnButtonpress()-
+Toggles the GlobalVariables.Checkmark value. | 
+Updates the button icons based on the new state of GlobalVariables.Checkmark. | 
+
+UpdateButtonIcon()-
+Updates the visibility of the sound on/off icons based on the GlobalVariables.Checkmark value. | 
+Forcing a UI update with Canvas.ForceUpdateCanvases().
+
+Debug Logs-
+Logs changes in icon visibility for debugging purposes.
+
+# Script 55 - SoundManager4: Manage Sound Icons and Global Variables
+This script manages sound icons and toggles a global variable candleStick based on the state of GlobalVariables1.newCheckmark. It updates sound icons and logs changes for debugging.
+
+Serialized Fields:
+soundOnIcon- Image component for the sound on icon. | 
+soundOffIcon- Image component for the sound off icon.
+
+Public Variables:
+candleStick- A static boolean variable to indicate whether sound is on or off.
+
+Methods:
+Awake()- Placeholder for initialization code. Currently commented out.
+
+Start()- Placeholder for initialization code. Currently empty.
+
+Update()- Placeholder for update logic. Currently empty.
+
+OnButtonpress()-
+Toggles the GlobalVariables1.newCheckmark variable. | 
+Updates the button icons based on the new state of GlobalVariables1.newCheckmark. 
+
+UpdateButtonIcon()-
+Updates the visibility of the sound on/off icons based on the value of GlobalVariables1.newCheckmark. | 
+Sets candleStick to false if GlobalVariables1.newCheckmark is true (indicating no sound) and to true otherwise (indicating sound). | 
+Forces a UI update with Canvas.ForceUpdateCanvases().
+
+Debug Logs-Logs the changes in icon visibility and candleStick state for debugging purposes.
+
+# Script 56 - SoundManager5: Handle Sound Mute State and Icons
+This script manages the sound mute state and updates the UI icons accordingly. It also handles the initialization and toggling of background music.
+
+Serialized Fields:
+soundOnIcon- Image component for the sound on icon. | 
+soundOffIcon- Image component for the sound off icon.
+
+Private Variables:
+muted- Boolean to track if the sound is muted or not.
+
+Methods:
+Start()-
+Loads the mute state from PlayerPrefs. | 
+Updates the button icons based on the loaded state. | 
+Finds or creates a BackgroundMusic1 object and sets its mute state.
+
+OnButtonPress()-
+Toggles the muted state. | 
+Saves the updated mute state to PlayerPrefs. | 
+Updates the button icons to reflect the new mute state. | 
+Finds the BackgroundMusic1 object and toggles its mute state.
+
+UpdateButtonIcon()-
+Updates the visibility of the sound on/off icons based on the muted state.
+
+Load()- 
+Loads the mute state from PlayerPrefs and sets the muted variable.
+
+Save()-
+Saves the current mute state to PlayerPrefs and calls PlayerPrefs.Save() to ensure immediate saving.
+
+Dependencies:
+BackgroundMusic1- Custom script or component that manages background music and has a ToggleMute(bool) method.
+
+# Script 57 - SoundToggle: Manage Sound Activation and Global Variables
+This script controls the activation and deactivation of sound-related GameObjects and manages corresponding global variables.
+
+Serialized Fields:
+buttonSound- GameObject for the first sound component. | 
+newbuttonSound- GameObject for the second sound component.
+
+Methods:
+Start()-Ensures that the sound components are initially enabled.
+
+ToggleSound()-
+Toggles the active state of buttonSound and newbuttonSound. | 
+Updates the respective global variables based on the active state of each GameObject.
+
+EnableSound()-
+Enables buttonSound and sets YourNamespace.GlobalVariables.Checkmark to true.
+
+EnableSound1()-
+Enables newbuttonSound and sets YourNamespace1.GlobalVariables1.newCheckmark to true.
+
+DisableSound()-
+Disables buttonSound and sets YourNamespace.GlobalVariables.Checkmark to false.
+
+DisableSound1()-
+Disables newbuttonSound and sets YourNamespace1.GlobalVariables1.newCheckmark to false.
+
+Dependencies:
+YourNamespace.GlobalVariables- Static class holding a boolean flag Checkmark.\
+
+YourNamespace1.GlobalVariables1- Static class holding a boolean flag newCheckmark.
+
+Notes:
+The script updates global variables based on the activation state of the GameObjects to maintain sound settings across different parts of the application. | 
+Ensure that buttonSound and newbuttonSound are properly assigned in the Unity Inspector for this script to function correctly.
+
+# Script 58 - SpawnObstacles: Control Obstacle Spawning
+This script handles the periodic spawning of obstacles within a defined 2D space.
+
+Serialized Fields:
+obstacle- The GameObject to be instantiated as an obstacle. | 
+maxX- Maximum X coordinate for obstacle spawning. | 
+minX- Minimum X coordinate for obstacle spawning. | 
+maxY- Maximum Y coordinate for obstacle spawning. | 
+minY- Minimum Y coordinate for obstacle spawning. | 
+timeBetweenSpawn- Time interval between consecutive spawns.
+
+Private Variables:
+spawnTime- The next time at which an obstacle will be spawned.
+
+Methods:
+Update()-
+Checks if the current time exceeds spawnTime. | 
+Calls Spawn() if it's time to spawn a new obstacle and updates spawnTime for the next spawn.
+
+Spawn()-
+Determines a random position within the defined minX, maxX, minY, and maxY range. | 
+Instantiates the obstacle at the computed position relative to the GameObject’s position and rotation.
+
+Notes:
+Ensure that obstacle is assigned in the Unity Inspector to define what prefab should be spawned.
+Adjust maxX, minX, maxY, and minY to control the area in which obstacles appear.
+timeBetweenSpawn controls the frequency of obstacle spawns. Set this value to manage spawn rate.
+
+# Script 59 - SpawnObstacles1: Enhanced Obstacle Spawning with Initial Delay
+This script extends obstacle spawning functionality to include an initial delay before the first spawn.
+
+Serialized Fields:
+obstacle1- The GameObject to be instantiated as an obstacle. | 
+maxX- Maximum X coordinate for obstacle spawning. | 
+minX- Minimum X coordinate for obstacle spawning. | 
+maxY- Maximum Y coordinate for obstacle spawning. | 
+minY- Minimum Y coordinate for obstacle spawning. | 
+timeBetweenSpawn- Time interval between consecutive spawns.
+
+Private Variables:
+spawnTime- The next time at which an obstacle will be spawned. 
+
+initialDelayPassed- A boolean flag to check if the initial delay period has passed.
+
+Methods:
+Start()-
+Sets spawnTime to the current time plus an initial delay of 1.3 seconds.
+
+Update()-
+Checks if the current time exceeds spawnTime and if the initial delay has passed. | 
+Calls Spawn() and updates spawnTime for the next spawn if the conditions are met. | 
+Updates initialDelayPassed if the initial delay has been reached.
+
+Spawn():
+Determines a random position within the defined minX, maxX, minY, and maxY range. | 
+Instantiates the obstacle1 at the computed position relative to the GameObject’s position and rotation.
+
+Notes:
+The initial delay ensures that the first obstacle does not spawn immediately when the game starts, providing a buffer period before spawning begins. | 
+Adjust the maxX, minX, maxY, and minY values to control the spawn area. | 
+The timeBetweenSpawn value controls the frequency of subsequent spawns.
+
+# Script 60 - SpawnObstacles2: Basic Obstacle Spawning
+This script manages obstacle spawning in a straightforward manner, without any initial delay.
+
+Serialized Fields:
+obstacle2- The GameObject to be instantiated as an obstacle. | 
+maxX- Maximum X coordinate for obstacle spawning. 
+
+minX- Minimum X coordinate for obstacle spawning. 
+
+maxY- Maximum Y coordinate for obstacle spawning. 
+
+minY- Minimum Y coordinate for obstacle spawning. 
+
+timeBetweenSpawn- Time interval between consecutive spawns.
+
+Private Variables:
+spawnTime- The next time at which an obstacle will be spawned.
+
+Methods:
+Start()-
+Initializes spawnTime to the current time, ensuring that the first obstacle spawn occurs immediately upon starting the game.
+
+Update()-
+Checks if the current time has surpassed spawnTime. |
+Calls Spawn() and updates spawnTime for the next spawn.
+
+Spawn()-
+Determines a random position within the defined minX, maxX, minY, and maxY range. | 
+Instantiates the obstacle2 at the computed position relative to the GameObject’s position and rotation.
+
+Notes:
+This script allows for continuous spawning of obstacles without an initial delay, starting immediately when the game begins.
+Adjust the maxX, minX, maxY, and minY values to control the spawn area.
+The timeBetweenSpawn value controls the frequency of obstacle spawns.
+
+# Script 61 - StopParticlesOnGameOver: Particle System Management
+This script is designed to stop and clear all particle systems associated with a GameObject when a game over condition is met.
+
+Private Variables:
+particleSystems- Array holding references to all ParticleSystem components attached to the GameObject or its children.
+Methods:
+
+Start()-
+Initializes particleSystems by finding and storing all ParticleSystem components attached to the GameObject or its children.\
+
+StopParticles()-
+Iterates through each ParticleSystem in particleSystems. | 
+Stops emission and clears all existing particles using StopEmittingAndClear, which halts new particles from being emitted and clears the current particles.
+
+Notes:
+Attach this script to a GameObject containing particle systems that you want to stop upon game over. | 
+Ensure that the method StopParticles() is called when the game over event occurs, usually from a game management script or a controller handling game state transitions.
+
+# Script 62 - TaggedBoolScript: Button Interactivity Management
+This script manages the interactability of several buttons based on a boolean flag and scene loading state.
+
+Public Variables:
+taggedBool- A static boolean variable used to control button interactability, initialized to false. 
+
+audioButton- Reference to the button that controls audio settings. 
+
+controlButton- Reference to the button that controls game settings. 
+
+creditButton- Reference to the button that displays credits. 
+
+optionButton- Reference to the button for additional options.
+
+Private Variables:
+sceneLoaded- A boolean flag indicating whether the scene has been loaded once, initialized to false.
+
+Methods:
+Start()-
+Retrieves the SceneLoaded value from PlayerPrefs. | 
+If the value is 0, it sets sceneLoaded to true and updates the PlayerPrefs to indicate that the scene has been loaded once (set to 2). 
+
+Update()-
+Checks if taggedBool is true and the scene has been loaded. | 
+If both conditions are met, it sets the interactable property of all referenced buttons to true, making them clickable.
+
+Notes:
+Attach this script to a GameObject that needs to manage button states based on specific conditions. | 
+Ensure that taggedBool is set to true at the appropriate time in your game to enable the buttons. | 
+The PlayerPrefs system is used to persist and retrieve the scene load state, allowing the buttons to be enabled only once the scene has been loaded.
+
+# Script 63 - TimerManager: Score and Timer Display
+This script manages and updates a score display based on elapsed time. It continuously increments the score and ensures the score is displayed with leading zeros.
+
+Public Variables:
+scoreText- Reference to the UI Text component that displays the score.
+
+Private Variables:
+score- A float variable to track the elapsed time and score. 
+
+displayedScore- An integer to hold the score value to be displayed, ensuring it's rounded and formatted properly.
+
+Methods:
+Update()-
+Checks if GlobalSubstance.obstacleTriggered is false. | 
+If false, it continuously increments score based on Time.deltaTime, which represents the time passed since the last frame. | 
+Converts the score from a float to an integer (displayedScore) using Mathf.FloorToInt to round down. | 
+Updates the scoreText UI element to display the displayedScore with leading zeros (D5 format), ensuring a consistent length of 5 digits.
+
+Notes:
+Attach this script to a GameObject that manages score or time display in your game. | 
+Ensure the scoreText reference is assigned in the Unity Inspector to connect it to the correct UI element. | 
+The score will continuously increase as long as GlobalSubstance.obstacleTriggered is false, allowing for dynamic score tracking and display.
+
+# Script 64 - ToggleAudioButton: Manage Button Visibility and UI Elements
+This script manages the visibility and interactability of UI elements related to an audio button and other UI components. It also controls the transparency of a UI overlay and ensures the audio button is brought to the front of the hierarchy.
+
+Public Variables:
+audioButtonParent- Reference to the parent GameObject of the audio button.
+
+Background- Reference to the UI overlay element.
+
+audioButton- Reference to the Audio Button.
+
+controlButton- Reference to the Control Button.
+
+creditButton- Reference to the Credit Button.
+
+optionButton- Reference to the Option Button.
+
+Private Variables:
+isBoolOne, isBoolTwo, isBoolThree, isBoolFour- Boolean flags for button states, sourced from ToggleOptionsButton.
+
+isOptionsButtonVisibility, isAudioButtonVisibility, isCreditsButtonVisibility, isControlsButtonVisibility- Visibility states of various buttons.
+
+isHideButtonOne, isHideButtonTwo, isHideButtonThree, isHideButtonFour- Flags for hiding specific buttons.
+
+areElementsVisible- Tracks the visibility of UI elements.
+
+controlSwitch- Static boolean used to manage control visibility.
+
+audioButtonTransform- Transform component of the Audio Button panel.
+
+audioSwitch- Boolean to manage the audio button's interaction state.
+
+Methods:
+Start()-
+Initializes audioSwitch to true. | 
+Retrieves the transform component of the audio button's parent and hides UI elements initially.
+
+OnAudioButtonClick()-
+Toggles the visibility and interactability of UI elements based on the flipSwitch variable from BackArrowButton4. | 
+Updates various boolean flags to reflect the state of the audio button and other related buttons. | 
+Calls ShowElements() or HideElements() based on the current visibility state. | 
+Moves the audio button to the front of the hierarchy using BringAudioButtonToFront().
+
+ShowElements()-
+Sets all child elements within the audio button panel to active. | 
+Adjusts the background overlay to a semi-transparent state.
+
+HideElements()-
+Deactivates the audio button if isHideButtonTwo is true. | 
+Sets all child elements within the audio button panel to inactive. | 
+Makes the background overlay fully transparent.
+
+BringAudioButtonToFront()-
+Moves the audio button to the front of the sibling hierarchy to ensure it is visually on top of other elements.
+
+Notes:
+Attach this script to a GameObject responsible for managing audio button interactions. | 
+Ensure all references (audioButtonParent, Background, audioButton, controlButton, creditButton, optionButton) are assigned in the Unity Inspector. | 
+ToggleOptionsButton and BackArrowButton4 need to be properly defined with the relevant static variables for this script to function correctly.
+
+# Script 65 - ToggleControlsButton: Manage Controls Button and UI Elements
+This script handles the visibility and interactability of UI elements related to a controls button. It also manages the transparency of a UI overlay and ensures the controls button is brought to the front of the hierarchy.
+
+Public Variables:
+controlButtonParent- Reference to the parent GameObject of the controls button.
+
+Background- Reference to the UI overlay element.
+
+controlButton- Reference to the Controls Button.
+
+audioButton- Reference to the Audio Button.
+
+creditButton- Reference to the Credit Button.
+
+optionButton- Reference to the Option Button.
+
+Private Variables-
+isBoolOne, isBoolTwo, isBoolThree, isBoolFour- Boolean flags for button states, sourced from ToggleOptionsButton.
+
+isOptionsButtonVisibility, isAudioButtonVisibility, isCreditsButtonVisibility, isControlsButtonVisibility- Visibility states of various buttons.
+
+isHideButtonOne, isHideButtonTwo, isHideButtonThree, isHideButtonFour- Flags for hiding specific buttons.
+
+areElementsVisible- Tracks the visibility of UI elements.
+
+controlSwitch- Static boolean used to manage control visibility.
+
+controlButtonTransform- Transform component of the controls button panel.
+
+newFoundSwitch- Boolean to manage the new state of the controls button.
+
+Methods:
+Start()-
+Initializes newFoundSwitch to true. | 
+Retrieves the transform component of the controls button's parent and hides UI elements initially.
+
+OnControlsButtonClick()-
+Toggles the visibility and interactability of UI elements based on the flipSwitch variable from BackArrowButton3. |
+Updates various boolean flags to reflect the state of the controls button and other related buttons. | 
+Calls ShowElements() or HideElements() based on the current visibility state. | 
+Moves the controls button to the front of the hierarchy using BringControlsButtonToFront().
+
+ShowElements()-
+Sets all child elements within the controls button panel to active. | 
+Adjusts the background overlay to a semi-transparent state.
+
+HideElements()-
+Deactivates the controls button if isHideButtonFour is true. | 
+Sets all child elements within the controls button panel to inactive. | 
+Makes the background overlay fully transparent.
+
+BringControlsButtonToFront()-
+Moves the controls button to the front of the sibling hierarchy to ensure it is visually on top of other elements.
+
+Notes:
+Attach this script to a GameObject responsible for managing controls button interactions. | 
+Ensure all references (controlButtonParent, Background, controlButton, audioButton, creditButton, optionButton) are assigned in the Unity Inspector. | 
+ToggleOptionsButton and BackArrowButton3 need to be properly defined with the relevant static variables for this script to function correctly.
+
+# Script 66 - ToggleCreditsButton: Manage Credits Button and UI Elements
+This script manages the visibility and interactability of UI elements associated with the credits button. It also controls the transparency of a UI overlay and ensures the credits button is brought to the front of the hierarchy.
+
+Public Variables:
+creditButtonParent- Reference to the parent GameObject of the credits button.
+
+Background- Reference to the UI overlay element.
+
+creditButton- Reference to the Credits Button.
+
+audioButton- Reference to the Audio Button.
+
+optionButton- Reference to the Option Button.
+
+controlButton- Reference to the Controls Button.
+
+Private Variables-
+isBoolOne, isBoolTwo, isBoolThree, isBoolFour- Boolean flags for button states, sourced from ToggleOptionsButton.
+
+isOptionsButtonVisibility, isAudioButtonVisibility, isCreditsButtonVisibility, isControlsButtonVisibility- Visibility states of various buttons.
+
+isHideButtonOne, isHideButtonTwo, isHideButtonThree, isHideButtonFour- Flags for hiding specific buttons.
+
+areElementsVisible- Tracks the visibility of UI elements.
+
+controlSwitch- Static boolean used to manage control visibility.
+
+creditButtonTransform- Transform component of the credits button panel.
+
+creditSwitch- Boolean to manage the new state of the credits button.
+
+Methods:
+Start()-
+Initializes creditSwitch to true. | 
+Retrieves the transform component of the credits button's parent and hides UI elements initially.
+
+OnCreditButtonClick()-
+Toggles the visibility and interactability of UI elements based on the flipSwitch variable from BackArrowButton2. | 
+Updates various boolean flags to reflect the state of the credits button and other related buttons. | 
+Calls ShowElements() or HideElements() based on the current visibility state. | 
+Moves the credits button to the front of the hierarchy using BringCreditsButtonToFront().
+
+ShowElements()-
+Sets all child elements within the credits button panel to active. | 
+Adjusts the background overlay to a semi-transparent state.
+
+HideElements()-
+Deactivates the credits button if isHideButtonThree is true. | 
+Sets all child elements within the credits button panel to inactive. | 
+Makes the background overlay fully transparent.
+
+BringCreditsButtonToFront()-
+Moves the credits button to the front of the sibling hierarchy to ensure it is visually on top of other elements.
+
+Notes:
+Attach this script to a GameObject responsible for managing credits button interactions. | 
+Ensure all references (creditButtonParent, Background, creditButton, audioButton, optionButton, controlButton) are assigned in the Unity Inspector. | 
+ToggleOptionsButton and BackArrowButton2 need to be properly defined with the relevant static variables for this script to function correctly.
+
+# Script 67 - ToggleOptionsButton: Manage Options Button and UI Elements
+This script handles the visibility and interactability of UI elements related to the options button. It also controls the transparency of a UI overlay and ensures the options button is brought to the front of the hierarchy.
+
+Public Variables:
+optionButtonParent- Reference to the parent GameObject of the options button.
+
+Background- Reference to the UI overlay element.
+
+optionButton- Reference to the Options Button.
+
+creditButton- Reference to the Credits Button.
+
+audioButton- Reference to the Audio Button.
+
+controlButton- Reference to the Controls Button.
+
+Static Variables-
+boolOne, boolTwo, boolThree, boolFour- Boolean flags for button states.
+
+optionsButtonVisibility, audioButtonVisibility, creditsButtonVisibility, controlsButtonVisibility- Visibility states of various buttons.
+
+hideButtonOne, hideButtonTwo, hideButtonThree, hideButtonFour- Flags for hiding specific buttons.
+
+Private Variables-
+areElementsVisible- Tracks the visibility of UI elements.
+
+optionButtonTransform- Transform component of the options button panel.
+
+optionSwitch- Boolean to manage the state of the options button.
+
+Methods:
+Start()-
+Initializes optionSwitch to true. | 
+Retrieves the transform component of the options button's parent and hides UI elements initially.
+
+OnOptionButtonClick()-
+Toggles the visibility and interactability of UI elements based on the flipSwitch variable from BackArrowButton1. | 
+Updates various boolean flags to reflect the state of the options button and other related buttons. | 
+Calls ShowElements() or HideElements() based on the current visibility state. | 
+Moves the options button to the front of the hierarchy using BringOptionsButtonToFront().
+
+ShowElements()-
+Sets all child elements within the options button panel to active. | 
+Adjusts the background overlay to a semi-transparent state.
+
+HideElements()-
+Deactivates the options button if boolOne is true. | 
+Sets all child elements within the options button panel to inactive. | 
+Makes the background overlay fully transparent.
+
+BringOptionsButtonToFront()-
+Moves the options button to the front of the sibling hierarchy to ensure it is visually on top of other elements.
+
+Notes:
+Attach this script to a GameObject responsible for managing options button interactions. | 
+Ensure all references (optionButtonParent, Background, optionButton, creditButton, audioButton, controlButton) are assigned in the Unity Inspector. | 
+BackArrowButton1 needs to be properly defined with the relevant static variables for this script to function correctly.
+
+# Script 68 - VolumeInitializer: Initialize Volume Settings from PlayerPrefs
+This script sets up volume sliders based on saved preferences, updating both music and sound effect volumes accordingly.
+
+Public Variables:
+musicVolumeSlider- Reference to the slider controlling music volume.
+
+soundEffectVolumeSlider- Reference to the slider controlling sound effect volume.
+
+Methods:
+Start()-
+Calls InitializeVolumeSliders() to set up sliders with saved volume settings. | 
+
+InitializeVolumeSliders()-
+Checks if saved volume preferences for music and sound effects exist in PlayerPrefs. | 
+Retrieves and applies the saved volume values to the corresponding sliders and updates the audio volumes. | 
+
+UpdateBackgroundMusicVolume(float volume)-
+Finds the BackgroundMusic1 component and sets its AudioSource volume to the specified level. | 
+Ensure the BackgroundMusic1 script is attached to an appropriate GameObject with an AudioSource component. | 
+
+UpdateSoundEffectVolume(float volume)-
+Placeholder method to update sound effect volume. | 
+Modify this method to fit your sound effects management setup.
+
+Notes:
+Attach this script to a GameObject responsible for initializing audio settings. | 
+Ensure that musicVolumeSlider and soundEffectVolumeSlider references are assigned in the Unity Inspector. | 
+Implement sound effect volume updating based on your specific sound effects management approach.
+
+# Script 69 - VolumeSlider1: Manage Background Music Volume with Slider
+This script allows users to adjust the background music volume using a slider and saves the volume setting for future sessions.
+
+Public Variables:
+volumeSlider- Reference to the slider UI element that controls volume.
+
+Private Variables:
+backgroundMusicAudioSource- Reference to the AudioSource component managing background music.
+
+musicVolumeKey- Key used for saving and retrieving volume settings in PlayerPrefs.
+
+Methods:
+Start()-
+Finds the AudioSource component and initializes the slider with the saved volume value if it exists in PlayerPrefs. | 
+Updates the AudioSource volume based on the slider's value.
+
+ChangeVolume()-
+Adjusts the AudioSource volume based on the current slider value. | 
+Saves the new volume setting to PlayerPrefs.
+
+SaveVolume()-
+Saves the current volume slider value to PlayerPrefs. | 
+
+UpdateBackgroundMusicVolume()-
+Updates the AudioSource volume based on the slider's value.
+
+Notes:
+Attach this script to a GameObject that manages the volume slider. | 
+Ensure the volumeSlider reference is assigned in the Unity Inspector. | 
+Adjust the FindObjectOfType<AudioSource>() line if your setup uses a different method to manage background music.
+
+# Script 70 - VolumeSlider2: Manage Sound Effect Volume with Slider
+This script controls the volume of sound effects through a slider, saves the volume setting, and updates a global volume variable.
+
+Public Variables:
+soundPlayer1- Reference to the AudioSource managing sound effects.
+
+Serialized Variables:
+volumeSlider- Reference to the slider UI element for adjusting volume.
+
+Methods:
+Start()-
+Initializes the slider with the saved volume value if it exists in PlayerPrefs. | 
+Updates the AudioSource volume based on the slider's value.
+
+ChangeVolume()-
+Adjusts the AudioSource volume based on the slider value. | 
+Saves the new volume setting to PlayerPrefs. | 
+Updates the global volume variable GlobalVolume.ButtonVolume.
+
+SaveVolume()-
+Saves the current volume slider value to PlayerPrefs and ensures the settings are written to disk. | 
+
+UpdateSoundEffectVolume():-
+Updates the AudioSource volume based on the slider's value. 
+
+Notes:
+Attach this script to a GameObject managing the volume slider. | 
+Assign the soundPlayer1 reference and volumeSlider in the Unity Inspector. | 
+Make sure the GlobalVolume class has a ButtonVolume variable for the global volume.
