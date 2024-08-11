@@ -162,12 +162,9 @@ Game Over Actions:
   Pauses the camera movement.
   Pauses background music and updates high score.
 
-Restart Functionality:
-Resets obstacleTriggered and reloads the current scene.
-Resumes camera movement and unpauses background music.
-References:
+Restart Functionality: Resets obstacleTriggered and reloads the current scene. Resumes camera movement and unpauses background music.
 
-Links to LoopingBackground, StopParticlesOnGameOver, CameraMovement, BackgroundMusic, HighScoreManager, and ScoreManager.
+References: Links to LoopingBackground, StopParticlesOnGameOver, CameraMovement, BackgroundMusic, HighScoreManager, and ScoreManager.
 
 # Script 26 - GlobalButtonReferences: Manages Persistent Button References
 This Unity script handles global references to UI buttons and ensures persistence across scenes.
