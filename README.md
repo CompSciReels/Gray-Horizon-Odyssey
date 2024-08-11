@@ -174,25 +174,23 @@ Instance: Provides a global access point to the GlobalButtonReferences instance.
 Button References: audioButton, controlButton, creditButton, optionButton: Public fields to assign button references in the Inspector.
 
 Persistence: The Awake method checks if the object has the "PersistentObject" tag to prevent destruction across scene loads.
-Button Recovery (Commented Out):
 
+Button Recovery (Commented Out):
 The RecoverButtons function is intended to find and assign button references if they are null. (Commented out in the current script.)
 
 # Script 27 - GlobalSubstance: Global State Management
 This static class maintains global state for the obstacleTriggered flag.
 
 Purpose: Provides a global, static variable to track if an obstacle has been triggered.
-Static Field:
 
-obstacleTriggered: A public static boolean that other scripts can access and modify.
+Static Field: obstacleTriggered: A public static boolean that other scripts can access and modify.
 
 # Script 28 - GlobalVolume: Volume Management
 This static class manages global volume settings for button sounds.
 
 Purpose: Provides a global static property to access and modify button volume levels.
 
-Static Property:
-ButtonVolume: A public static float property that stores the volume level for button sounds.
+Static Property: ButtonVolume: A public static float property that stores the volume level for button sounds.
 
 # Script 29 - GlobalVolume1: Enhanced Volume Management
 This static class manages button volume with additional functionality.
