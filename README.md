@@ -29,8 +29,11 @@ This Unity script manages the visibility of child GameObjects within specified U
 This Unity script handles background music management, ensuring that music persists across scenes and is appropriately played, paused, or stopped based on the scene index. It includes functionality to mute/unmute the audio and control playback state.
 
 Singleton Pattern: Maintains a single instance of the background music across scenes using DontDestroyOnLoad.
+
 Scene Management: Stops music in specific scenes (index 0 and 2) and plays it in others.
+
 Playback Controls: Includes methods to play, pause, unpause, stop, and restart music.
+
 Mute Functionality: Allows toggling the mute state and checks if the music is currently muted.
 
 # Script 10 - BackgroundMusic1: Advanced Background Music Management
