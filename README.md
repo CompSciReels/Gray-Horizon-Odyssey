@@ -49,3 +49,73 @@ Scene Management: Pauses, unpauses, or restarts music depending on the scene ind
 Playback Controls: Includes methods to play, pause, unpause, stop, and restart music with checks for mute state.
 Mute Functionality: Toggles mute state and provides status checks for whether music is muted.
 
+# Script 11 - ButtonSound: Manage Sound Effects for Buttons
+
+This Unity script handles playing sound effects when a button is interacted with. It uses an AudioSource to play sounds and tracks whether the sound has been triggered using the soundTriggered variable.
+
+Sound Playback: Plays a sound effect if GlobalVariables.Checkmark is true.
+Sound Tracking: Updates the soundTriggered variable to track if the sound has been triggered.
+Debugging: Provides debug logs to track the state of sound playback.
+
+# Script 12 - ButtonSound2: Control Sound Effects with Additional Checks
+
+This Unity script manages sound effects for button interactions, using an AudioSource to play sounds. It includes a soundTriggered1 variable to track if the sound has been triggered and checks a global variable to determine if the sound should play.
+
+Sound Playback: Plays a sound effect if GlobalVariables1.newCheckmark is true.
+Sound Tracking: Monitors the playback state of the sound with soundTriggered1.
+Debugging: Logs messages to indicate if the sound is still playing or has been stopped.
+
+# Script 13 - ButtonSoundPlayer: Play Button Click Sound
+
+This Unity script plays a button click sound using an AudioSource component. The AudioClip for the button click sound is assigned through the Inspector.
+
+Sound Playback: Plays the assigned buttonClickSound when the PlayButtonClickSound method is called.
+Setup: Retrieves the AudioSource component at the start to handle playback.
+
+# Script 14 - CameraMovement: Control Camera Movement
+
+This Unity script controls the movement of the camera along the x-axis. It allows for camera movement with a set speed and provides methods to start or stop the movement.
+
+Camera Movement: Moves the camera along the x-axis based on cameraSpeed when canMoveCamera is true.
+Control Methods: StopCamera and ResumeCamera methods toggle the ability to move the camera.
+
+
+# Script 15 - CandleStickControl: Play Sound Based on Condition
+
+This Unity script plays a sound using an AudioSource when a specific condition from SoundManager4 is met. It checks if SoundManager4.candleStick is true and plays the sound accordingly.
+
+Condition Check: Plays the sound if SoundManager4.candleStick is true.
+Sound Playback: Uses soundPlayer1 to handle the audio playback.
+
+# Script 16 - ChangeScene: Switch to a Specified Scene
+
+This Unity script handles scene transitions, loading a specified scene when the MoveToHomeMenu method is called.
+
+Scene Loading: Loads the scene specified by the sceneToLoad variable.
+Debugging: Logs messages indicating the scene has been switched and loaded.
+
+# Script 17 - ChangeScene2: Load Selector Scene
+
+This Unity script switches to the "Selector" scene when the MoveToSelector method is called.
+
+Scene Transition: Loads the "Selector" scene, replacing the current scene using LoadSceneMode.Single.
+
+# Script 18 - Character: Define Character Attributes
+
+This Unity script defines a Character class with a serializable attribute for character customization.
+
+Character Attributes: Contains a public Sprite field named characterSprite to hold the character's visual representation.
+
+# Script 19 - Character2: Define Character Names
+
+This Unity script defines a Character2 class with a serializable attribute for identifying character names.
+
+Character Attributes: Contains a public string field named characterGameObjectName for specifying the character's name.
+
+# Script 20 - CharacterDatabase: Manage Character Data
+This Unity script defines a CharacterDatabase as a ScriptableObject to manage an array of Character objects.
+
+Character Array: Stores a list of Character objects.
+Character Count: Provides a property to get the number of characters.
+Get Character: Retrieves a specific Character by index.
+
