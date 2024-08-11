@@ -1,6 +1,17 @@
 # Gray Horizon Odyssey
 #### Video Demo: https://youtu.be/tbmjVBqXAr0 
 
+Built a C# Unity game running on Itch.io. This game was created to address the critical issue of water pollution in an engaging and inclusive manner suitable for all ages. 
+
+Within the game, players have the freedom to personalize their audio experience, choose their preferred boat, and navigate it skillfully to evade the floating debris in the waterways!
+
+UN Sustainable Development Goal 6: Clean water and sanitation. 
+
+Within the modern world, bodies of water alike are becoming more polluted by the year. Water pollution remains less obvious than other forms of pollution, like air pollution. 
+
+What is water pollution? Water pollution occurs when harmful substances—often chemicals or micro-organisms—contaminate a stream, river, lake, ocean, or other body of water, degrading water quality and rendering it toxic to humans or the environment. 
+
+47% of Americans aren't aware of water pollution. Let's become informed and take action! 
 # Script 1 - AAA: Deactivate GameObject on Button Click
 This Unity script deactivates a specified GameObject when the attached button is clicked. Make sure to assign the target GameObject in the objectToDeactivate field. If the button or GameObject isn't set, a warning will appear in the console.
 
