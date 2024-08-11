@@ -40,46 +40,57 @@ Mute Functionality: Allows toggling the mute state and checks if the music is cu
 This Unity script manages background music with additional scene-specific controls and enhanced mute functionality. It ensures that music persists across scenes, handles playback based on scene conditions, and provides methods to control music playback and mute state.
 
 Singleton Pattern: Maintains a single instance of the background music object using DontDestroyOnLoad.
+
 Scene Management: Pauses, unpauses, or restarts music depending on the scene index or name (e.g., resets music when entering the "HomeScene").
+
 Playback Controls: Includes methods to play, pause, unpause, stop, and restart music with checks for mute state.
+
 Mute Functionality: Toggles mute state and provides status checks for whether music is muted.
 
 # Script 11 - ButtonSound: Manage Sound Effects for Buttons
 This Unity script handles playing sound effects when a button is interacted with. It uses an AudioSource to play sounds and tracks whether the sound has been triggered using the soundTriggered variable.
 
 Sound Playback: Plays a sound effect if GlobalVariables.Checkmark is true.
+
 Sound Tracking: Updates the soundTriggered variable to track if the sound has been triggered.
+
 Debugging: Provides debug logs to track the state of sound playback.
 
 # Script 12 - ButtonSound2: Control Sound Effects with Additional Checks
 This Unity script manages sound effects for button interactions, using an AudioSource to play sounds. It includes a soundTriggered1 variable to track if the sound has been triggered and checks a global variable to determine if the sound should play.
 
 Sound Playback: Plays a sound effect if GlobalVariables1.newCheckmark is true.
+
 Sound Tracking: Monitors the playback state of the sound with soundTriggered1.
+
 Debugging: Logs messages to indicate if the sound is still playing or has been stopped.
 
 # Script 13 - ButtonSoundPlayer: Play Button Click Sound
 This Unity script plays a button click sound using an AudioSource component. The AudioClip for the button click sound is assigned through the Inspector.
 
 Sound Playback: Plays the assigned buttonClickSound when the PlayButtonClickSound method is called.
+
 Setup: Retrieves the AudioSource component at the start to handle playback.
 
 # Script 14 - CameraMovement: Control Camera Movement
 This Unity script controls the movement of the camera along the x-axis. It allows for camera movement with a set speed and provides methods to start or stop the movement.
 
 Camera Movement: Moves the camera along the x-axis based on cameraSpeed when canMoveCamera is true.
+
 Control Methods: StopCamera and ResumeCamera methods toggle the ability to move the camera.
 
 # Script 15 - CandleStickControl: Play Sound Based on Condition
 This Unity script plays a sound using an AudioSource when a specific condition from SoundManager4 is met. It checks if SoundManager4.candleStick is true and plays the sound accordingly.
 
 Condition Check: Plays the sound if SoundManager4.candleStick is true.
+
 Sound Playback: Uses soundPlayer1 to handle the audio playback.
 
 # Script 16 - ChangeScene: Switch to a Specified Scene
 This Unity script handles scene transitions, loading a specified scene when the MoveToHomeMenu method is called.
 
 Scene Loading: Loads the scene specified by the sceneToLoad variable.
+
 Debugging: Logs messages indicating the scene has been switched and loaded.
 
 # Script 17 - ChangeScene2: Load Selector Scene
@@ -101,45 +112,55 @@ Character Attributes: Contains a public string field named characterGameObjectNa
 This Unity script defines a CharacterDatabase as a ScriptableObject to manage an array of Character objects.
 
 Character Array: Stores a list of Character objects.
+
 Character Count: Provides a property to get the number of characters.
+
 Get Character: Retrieves a specific Character by index.
 
 # Script 21 - CharacterDatabase2: Manage Character2 Data
 This Unity script defines a CharacterDatabase2 as a ScriptableObject to manage an array of Character2 objects.
 
 Character2 Array: Stores a list of Character2 objects.
+
 Character Count: Provides a property to get the number of Character2 items.
+
 Get Character: Retrieves a specific Character2 by index.
 
 # Script 22 - CharacterManager: Handle Character Selection and Display
 This Unity script manages character selection and display, allowing users to cycle through characters and persist their choice.
 
 Character Selection: Uses CharacterDatabase to manage and display character options.
+
 Option Navigation: Includes methods NextOption and BackOption to navigate through available characters.
+
 Persistence: Saves and loads the selected character option using PlayerPrefs.
 
 # Script 23 - CharacterSelector: Select and Save Character Index
 This Unity script handles the selection and saving of a character index when the play button is clicked.
 
 Character Selection: Retrieves the currently selected character from PlayerPrefs.
+
 Slot Index Finding: Determines the index of the selected character within the CharacterDatabase.
+
 Persistence: Saves the selected character's slot index to PlayerPrefs.
 
 # Script 24 - EventSystemManager: Singleton for EventSystem Management
 This Unity script ensures that an EventSystem exists in the scene and is managed as a singleton.
 
 Singleton Pattern: Ensures only one instance of EventSystemManager exists.
+
 EventSystem Creation: Creates and configures an EventSystem if none exists in the scene.
+
 Persistence: Makes sure the EventSystemManager persists across scene loads.
 
 # Script 25 - GameOver: Manages Game Over State
 This Unity script handles the game-over state by managing UI, game mechanics, and background music.
 
 Game Over Actions:
-Displays gameOverPanel.
-Stops background looping and particle effects.
-Pauses the camera movement.
-Pauses background music and updates high score.
+  Displays gameOverPanel.
+  Stops background looping and particle effects.
+  Pauses the camera movement.
+  Pauses background music and updates high score.
 
 Restart Functionality:
 Resets obstacleTriggered and reloads the current scene.
