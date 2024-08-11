@@ -205,11 +205,9 @@ Initializes highScore from PlayerPrefs.
 Updates the high score display.
 Finds and references the ScoreManager script.
 
-Public Methods:
-UpdateHighScore(float currentScore): Updates the high score if the current score exceeds it. Saves the new high score to PlayerPrefs.
-Private Methods:
+Public Methods: UpdateHighScore(float currentScore): Updates the high score if the current score exceeds it. Saves the new high score to PlayerPrefs.
 
-UpdateHighScoreText(): Formats and updates the high score text to a 5-digit string.
+Private Methods: UpdateHighScoreText(): Formats and updates the high score text to a 5-digit string.
 
 # Script 31 - HomeSwitch: Handling Transitions to the Home Screen
 This script manages transitions to the home screen, stopping background elements and updating the high score when certain conditions are met.
@@ -334,6 +332,7 @@ canAccessPauseMenu: Boolean flag indicating whether the pause menu can be access
 
 Private Methods:
 Start(): Initializes the game state, sets time scale to normal, hides the pause menu, and finds references to necessary scripts.
+
 Public Methods:
 Pause(): Displays the pause menu, stops game time, and pauses the background music if the pause menu is accessible.
 Resume(): Hides the pause menu, resumes game time, and unpauses the background music.
@@ -487,6 +486,7 @@ PlaySoundAndSwitchScene():
 Plays the sound if soundPlayer1 is assigned.
 Schedules KillSoundAndSwitchScene to be called after soundDuration seconds.
 Logs messages based on whether the sound is playing or not.
+
 KillSoundAndSwitchScene():
 Stops and disables soundPlayer1 if it is still playing.
 Calls SwitchScene to change to the new scene.
@@ -518,8 +518,8 @@ This script plays a sound effect with volume controlled by a global variable.
 
 Public Variables:
 soundPlayer1: Reference to the AudioSource for playing the sound.
-Methods:
 
+Methods:
 PlaySound():
 Sets the volume of soundPlayer1 using GlobalVolume.ButtonVolume.
 Plays the sound if soundPlayer1 is assigned.
@@ -548,6 +548,7 @@ Increases score continuously based on time.
 Adjusts score increase rate and manages visibility toggling.
 Resets score if it exceeds 99999.
 Updates score text display.
+
 UpdateScoreText(float currentScore):
 Formats and updates the score text with leading zeros.
 Ensures score text visibility if score is zero.
