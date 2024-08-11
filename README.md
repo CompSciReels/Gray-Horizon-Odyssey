@@ -157,12 +157,12 @@ Persistence: Makes sure the EventSystemManager persists across scene loads.
 This Unity script handles the game-over state by managing UI, game mechanics, and background music.
 
 Game Over Actions:
-  Displays gameOverPanel.
-  Stops background looping and particle effects.
-  Pauses the camera movement.
+  Displays gameOverPanel. | 
+  Stops background looping and particle effects. | 
+  Pauses the camera movement. | 
   Pauses background music and updates high score.
 
-Restart Functionality: Resets obstacleTriggered and reloads the current scene. Resumes camera movement and unpauses background music.
+Restart Functionality: Resets obstacleTriggered and reloads the current scene. | Resumes camera movement and unpauses background music.
 
 References: Links to LoopingBackground, StopParticlesOnGameOver, CameraMovement, BackgroundMusic, HighScoreManager, and ScoreManager.
 
@@ -183,50 +183,40 @@ This static class maintains global state for the obstacleTriggered flag.
 
 Purpose: Provides a global, static variable to track if an obstacle has been triggered.
 
-Static Field: obstacleTriggered: A public static boolean that other scripts can access and modify.
+Static Field: obstacleTriggered- A public static boolean that other scripts can access and modify.
 
 # Script 28 - GlobalVolume: Volume Management
 This static class manages global volume settings for button sounds.
 
 Purpose: Provides a global static property to access and modify button volume levels.
 
-Static Property: ButtonVolume: A public static float property that stores the volume level for button sounds.
+Static Property: ButtonVolume- A public static float property that stores the volume level for button sounds.
 
 # Script 29 - GlobalVolume1: Enhanced Volume Management
 This static class manages button volume with additional functionality.
 
 Purpose: Provides global access to button volume settings with encapsulation and storage.
 
-Private Field:
-buttonVolume: A private static float that stores the button volume level.
+Private Field: buttonVolume- A private static float that stores the button volume level.
 
-Public Static Methods:
-GetVolume(): Returns the current button volume level.
-SetVolume(float volume): Sets the button volume level and saves it using PlayerPrefs.
+Public Static Methods: GetVolume()- Returns the current button volume level. | SetVolume(float volume)- Sets the button volume level and saves it using PlayerPrefs.
 
-Additional Features:
-The SetVolume method saves the volume level to PlayerPrefs, making it persistent across sessions.
+Additional Features: The SetVolume method saves the volume level to PlayerPrefs, making it persistent across sessions.
 
 # Script 30 - HighScoreManager: Managing and Displaying High Scores
 This script manages and displays the high score for a game, using Unity's PlayerPrefs for persistent storage.
 
 Purpose: Tracks the highest score achieved and updates the UI text accordingly.
 
-Public Fields:
-highScoreText: Reference to the UI Text component that displays the high score.
+Public Fields: highScoreText- Reference to the UI Text component that displays the high score.
 
-Private Fields:
-highScore: Stores the current high score.
-scoreManager: Reference to the ScoreManager script.
+Private Fields: highScore- Stores the current high score. | scoreManager- Reference to the ScoreManager script.
 
-Start Method:
-Initializes highScore from PlayerPrefs.
-Updates the high score display.
-Finds and references the ScoreManager script.
+Start Method: Initializes highScore from PlayerPrefs. | Updates the high score display. | Finds and references the ScoreManager script.
 
-Public Methods: UpdateHighScore(float currentScore): Updates the high score if the current score exceeds it. Saves the new high score to PlayerPrefs.
+Public Methods: UpdateHighScore(float currentScore)- Updates the high score if the current score exceeds it and saves the new high score to PlayerPrefs.
 
-Private Methods: UpdateHighScoreText(): Formats and updates the high score text to a 5-digit string.
+Private Methods: UpdateHighScoreText()- Formats and updates the high score text to a 5-digit string.
 
 # Script 31 - HomeSwitch: Handling Transitions to the Home Screen
 This script manages transitions to the home screen, stopping background elements and updating the high score when certain conditions are met.
