@@ -10,5 +10,4 @@ This Unity script deactivates a specified GameObject when the attached button is
 This Unity script disables a child button on start and re-enables it when the parent button is clicked. It automatically finds the parent button and subscribes to its onClick event. If the parent button isn't found, a warning is logged.
 
 #Script 3 - ActivateButtonClick: Toggle Menu Visibility
-
 This Unity script hides a menu on start and toggles its visibility when a button is clicked. The script references the entire menu object and switches its active state on each button click.
