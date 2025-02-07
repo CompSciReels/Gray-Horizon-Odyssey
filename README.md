@@ -1,5 +1,4 @@
 # Gray Horizon Odyssey
-#### Video Demo: https://youtu.be/tbmjVBqXAr0 
 
 Built a C# Unity game running on Itch.io. This game was created to address the critical issue of water pollution in an engaging and inclusive manner suitable for all ages. 
 
