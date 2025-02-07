@@ -1,6 +1,6 @@
 # Gray Horizon Odyssey
 
-Built a C# Unity game running on Itch.io. This game was created to address the critical issue of water pollution in an engaging and inclusive manner suitable for all ages. 
+<!--Built a C# Unity game running on Itch.io. This game was created to address the critical issue of water pollution in an engaging and inclusive manner suitable for all ages.
 
 Within the game, players have the freedom to personalize their audio experience, choose their preferred boat, and navigate it skillfully to evade the floating debris in the waterways!
 
@@ -1263,4 +1263,4 @@ Updates the AudioSource volume based on the slider's value.
 Notes:
 Attach this script to a GameObject managing the volume slider. | 
 Assign the soundPlayer1 reference and volumeSlider in the Unity Inspector. | 
-Make sure the GlobalVolume class has a ButtonVolume variable for the global volume.
+Make sure the GlobalVolume class has a ButtonVolume variable for the global volume. -->
