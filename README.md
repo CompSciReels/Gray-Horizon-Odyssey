@@ -13,8 +13,6 @@ Feel free to [open an issue](http://github.com/CompSciReels/gray-horizon-odyssey
 
 ## 🤩 Support 
 
-## 👨‍💻 Technologies 
-
 💙 If you like this project, give it a ⭐ and share it with friends!
 
 <div style="display: flex; align-items: center;">
