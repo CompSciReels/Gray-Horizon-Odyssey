@@ -11,7 +11,7 @@ Play **Gray Horizon Odyssey** directly!
 
 Feel free to [open an issue](http://github.com/CompSciReels/gray-horizon-odyssey/issues/new/choose).
 
-## 🤩 Support 
+## 🤩 Support  Technologies 
 
 💙 If you like this project, give it a ⭐ and share it with friends!
 
@@ -25,7 +25,7 @@ Feel free to [open an issue](http://github.com/CompSciReels/gray-horizon-odyssey
 <a href="https://buymeacoffee.com/comp.sci.reels" style="outline: none;">
 <img alt="Buy me a coffee" title="Buy me a coffee" src="https://custom-icon-badges.demolab.com/badge/-Buy_me_a_coffee-FF5E5B?style=for-the-badge&logo=kofi&logoColor=white"/>
 
-## 👨‍💻 Technologies brooo
+## 👨‍💻 Technologies 
 
 [![MongoDB](https://custom-icon-badges.demolab.com/badge/-MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)](https://www.mongodb.com/)
 [![Express](https://custom-icon-badges.demolab.com/badge/-Express-000000?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com/)
