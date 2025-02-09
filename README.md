@@ -11,7 +11,9 @@ Play **Gray Horizon Odyssey** directly!
 
 Feel free to [open an issue](http://github.com/CompSciReels/gray-horizon-odyssey/issues/new/choose).
 
-## 🤩 Support  Technologies 
+## 🤩 Support 
+
+## 👨‍💻 Technologies 
 
 💙 If you like this project, give it a ⭐ and share it with friends!
 
