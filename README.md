@@ -15,13 +15,6 @@ Feel free to [open an issue](http://github.com/CompSciReels/gray-horizon-odyssey
 
 💙 If you like this project, give it a ⭐ and share it with friends!
 
-
-<a href="https://www.tiktok.com/@comp.sci.reels?lang=en">
-<img alt="tiktok follower" title="Follow my TikTok channel" src="https://custom-icon-badges.demolab.com/badge/TIKTOK-9B4E97?style=for-the-badge&logo=tiktok&logoColor=white&labelColor=7A3E85"/>
-   
-<a href="https://buymeacoffee.com/comp.sci.reels">
-<img alt="Buy me a coffee" title="Buy me a coffee" src="https://custom-icon-badges.demolab.com/badge/-Buy_me_a_coffee-FF5E5B?style=for-the-badge&logo=kofi&logoColor=white"/>
-
 <p align="left">
   <a href="https://www.tiktok.com/@comp.sci.reels?lang=en">
     <img alt="tiktok follower" title="Follow my TikTok channel" src="https://custom-icon-badges.demolab.com/badge/TIKTOK-9B4E97?style=for-the-badge&logo=tiktok&logoColor=white&labelColor=7A3E85"/></a>
