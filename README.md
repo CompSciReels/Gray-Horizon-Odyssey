@@ -21,7 +21,7 @@ Feel free to [open an issue](http://github.com/CompSciReels/gray-horizon-odyssey
     <!--<img width="12px" style="padding-right: 10px;"/>-->
    <!--</a>-->
    <a href="https://buymeacoffee.com/comp.sci.reels" style="outline: none;">
-    <!--<img alt="Buy me a coffee" title="Buy me a coffee" src="https://custom-icon-badges.demolab.com/badge/-Buy_me_a_coffee-FF5E5B?style=for-the-badge&logo=kofi&logoColor=white"/>-->
+    <img alt="Buy me a coffee" title="Buy me a coffee" src="https://custom-icon-badges.demolab.com/badge/-Buy_me_a_coffee-FF5E5B?style=for-the-badge&logo=kofi&logoColor=white"/>
   <!--</a>-->
 <!--</div>-->
 
