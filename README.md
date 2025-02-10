@@ -1,3 +1,6 @@
+[![stars](https://custom-icon-badges.demolab.com/github/stars/CompSciReels/custom-icon-badges?logo=star&logoColor=black)](https://github.com/CompSciReels/custom-icon-badges/stargazers "stars")
+[![issues](https://custom-icon-badges.demolab.com/github/issues-raw/CompSciReels/custom-icon-badges?logo=issue)](https://github.com/CompSciReels/custom-icon-badges/issues "issues")
+
 # Gray Horizon Odyssey
 
 Play **Gray Horizon Odyssey** directly!
