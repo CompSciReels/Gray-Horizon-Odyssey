@@ -32,3 +32,4 @@ Feel free to [open an issue](http://github.com/CompSciReels/gray-horizon-odyssey
 [![Unity](https://custom-icon-badges.demolab.com/badge/-Unity-000000?style=for-the-badge&logo=unity&logoColor=white)](https://unity.com/)
 [![C#](https://custom-icon-badges.demolab.com/badge/-CSHARP-47A248?style=for-the-badge&logo=CSHARP&logoColor=white)](https://learn.microsoft.com/en-us/dotnet/csharp/)
 [![HTML](https://custom-icon-badges.demolab.com/badge/-HTML-218AAB?style=for-the-badge&logo=html&logoColor=white)](https://html.spec.whatwg.org/)
+[![ITCH](https://custom-icon-badges.demolab.com/badge/-ITCH-red?style=for-the-badge&logo=itch&logoColor=white)](https://itch.io)
