@@ -1,7 +1,7 @@
 # Gray Horizon Odyssey
 
-[![stars](https://custom-icon-badges.demolab.com/github/stars/CompSciReels/custom-icon-badges?logo=star&logoColor=black)](https://github.com/CompSciReels/Gray-Horizon-Odyssey/stargazers "stars")
-[![issues](https://custom-icon-badges.demolab.com/github/issues-raw/DenverCoder1/custom-icon-badges?logo=issue)](https://github.com/DenverCoder1/custom-icon-badges/issues "issues")
+[![stars](https://gray-horizon-odyssey.demolab.com/github/stars/CompSciReels/gray-horizon-odyssey?logo=star&logoColor=black)](https://github.com/CompSciReels/gray-horizon-odyssey/stargazers "stars")
+[![issues](https://gray-horizon-odyssey.demolab.com/github/issues-raw/CompSciReels/gray-horizon-odyssey?logo=issue)](https://github.com/CompSciReels/gray-horizon-odyssey/issues "issues")
 
 Play **Gray Horizon Odyssey** directly!
 
