@@ -1,6 +1,7 @@
 # Gray Horizon Odyssey
 
 [![stars](https://gray-horizon-odyssey.demolab.com/github/stars/CompSciReels/gray-horizon-odyssey?logo=star&logoColor=black)](https://github.com/CompSciReels/gray-horizon-odyssey/stargazers "stars")
+
 [![issues](https://gray-horizon-odyssey.demolab.com/github/issues-raw/CompSciReels/gray-horizon-odyssey?logo=issue)](https://github.com/CompSciReels/gray-horizon-odyssey/issues "issues")
 
 Play **Gray Horizon Odyssey** directly!
